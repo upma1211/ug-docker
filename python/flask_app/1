@@ -1,0 +1,6 @@
+
+container_id = docker ps | grep flask | awk '{print $1}'
+echo $container_id
+
+#docker build -t flask_app .
+#docker run -d -p 5000:5000  --name flask_container flask_app
